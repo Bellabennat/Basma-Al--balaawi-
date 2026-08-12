@@ -770,104 +770,194 @@
 
 <!-- SKILLS -->
 <section id="skills">
-
     <div class="section-title">
-
-        <span>My Skills</span>
-
-        <h2>Skills & Expertise</h2>
-
+        <span>MY EXPERTISE</span>
+        <h2>Skills & Professional Expertise</h2>
+        <p>
+            A versatile professional with experience in CRM management, lead management,
+            email management, data entry, administrative support, team leadership,
+            and website creation.
+        </p>
     </div>
 
-    <div class="skills">
+    <div class="skills-grid">
 
-        <div class="skill">
-
-            <div class="skill-info">
-                <span>Email Management</span>
-                <span>95%</span>
-            </div>
-
-            <div class="skill-bar">
-                <div class="skill-progress" style="width:95%"></div>
-            </div>
-
+        <div class="skill-card">
+            <div class="skill-icon">01</div>
+            <h3>CRM Management</h3>
+            <p>
+                Managing CRM systems, customer information, pipelines, records,
+                follow-ups, and maintaining organized client data.
+            </p>
         </div>
 
-
-        <div class="skill">
-
-            <div class="skill-info">
-                <span>CRM Management</span>
-                <span>95%</span>
-            </div>
-
-            <div class="skill-bar">
-                <div class="skill-progress" style="width:95%"></div>
-            </div>
-
+        <div class="skill-card">
+            <div class="skill-icon">02</div>
+            <h3>Lead Management</h3>
+            <p>
+                Organizing leads, tracking prospects, managing follow-ups,
+                updating lead information, and supporting the sales process.
+            </p>
         </div>
 
-
-        <div class="skill">
-
-            <div class="skill-info">
-                <span>Lead Management</span>
-                <span>90%</span>
-            </div>
-
-            <div class="skill-bar">
-                <div class="skill-progress" style="width:90%"></div>
-            </div>
-
+        <div class="skill-card">
+            <div class="skill-icon">03</div>
+            <h3>Email Management</h3>
+            <p>
+                Professional email organization, inbox management, filtering,
+                labeling, follow-ups, and keeping communication organized.
+            </p>
         </div>
 
-
-        <div class="skill">
-
-            <div class="skill-info">
-                <span>Data Entry</span>
-                <span>95%</span>
-            </div>
-
-            <div class="skill-bar">
-                <div class="skill-progress" style="width:95%"></div>
-            </div>
-
+        <div class="skill-card">
+            <div class="skill-icon">04</div>
+            <h3>Data Entry</h3>
+            <p>
+                Accurate data entry, updating records, maintaining databases,
+                organizing information, and ensuring data accuracy.
+            </p>
         </div>
 
-
-        <div class="skill">
-
-            <div class="skill-info">
-                <span>Administrative Support</span>
-                <span>90%</span>
-            </div>
-
-            <div class="skill-bar">
-                <div class="skill-progress" style="width:90%"></div>
-            </div>
-
+        <div class="skill-card">
+            <div class="skill-icon">05</div>
+            <h3>Administrative Support</h3>
+            <p>
+                Providing reliable administrative assistance, documentation,
+                organization, coordination, and day-to-day operational support.
+            </p>
         </div>
 
+        <div class="skill-card">
+            <div class="skill-icon">06</div>
+            <h3>Team Leadership</h3>
+            <p>
+                Experienced Team Lead (TL) with experience coordinating team
+                activities, supporting team members, and maintaining workflow.
+            </p>
+        </div>
 
-        <div class="skill">
+        <div class="skill-card">
+            <div class="skill-icon">07</div>
+            <h3>Website Creation</h3>
+            <p>
+                Creating and managing professional websites, editing website
+                content, and maintaining web pages using modern tools.
+            </p>
+        </div>
 
-            <div class="skill-info">
-                <span>Organization</span>
-                <span>95%</span>
-            </div>
-
-            <div class="skill-bar">
-                <div class="skill-progress" style="width:95%"></div>
-            </div>
-
+        <div class="skill-card">
+            <div class="skill-icon">08</div>
+            <h3>Organization & Coordination</h3>
+            <p>
+                Strong organizational skills with the ability to manage multiple
+                tasks, prioritize work, and coordinate activities efficiently.
+            </p>
         </div>
 
     </div>
-
 </section>
 
+<style>
+    #skills {
+        padding: 100px 8%;
+        background: #f8fafc;
+    }
+
+    #skills .section-title {
+        text-align: center;
+        max-width: 850px;
+        margin: 0 auto 60px;
+    }
+
+    #skills .section-title span {
+        display: block;
+        margin-bottom: 12px;
+        color: #c79a3b;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    #skills .section-title h2 {
+        margin: 0 0 18px;
+        color: #071936;
+        font-size: 42px;
+        line-height: 1.2;
+    }
+
+    #skills .section-title p {
+        margin: 0 auto;
+        color: #64748b;
+        font-size: 16px;
+        line-height: 1.8;
+        max-width: 720px;
+    }
+
+    #skills .skills-grid {
+        max-width: 1150px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    #skills .skill-card {
+        background: #ffffff;
+        padding: 32px;
+        border: 1px solid #e2e8f0;
+        border-radius: 16px;
+        transition: all 0.3s ease;
+        box-shadow: 0 8px 25px rgba(7, 25, 54, 0.05);
+    }
+
+    #skills .skill-card:hover {
+        transform: translateY(-6px);
+        border-color: #c79a3b;
+        box-shadow: 0 15px 35px rgba(7, 25, 54, 0.10);
+    }
+
+    #skills .skill-icon {
+        width: 46px;
+        height: 46px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        border-radius: 50%;
+        background: #071936;
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+    #skills .skill-card h3 {
+        margin: 0 0 12px;
+        color: #071936;
+        font-size: 21px;
+    }
+
+    #skills .skill-card p {
+        margin: 0;
+        color: #64748b;
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+    @media (max-width: 768px) {
+        #skills {
+            padding: 70px 5%;
+        }
+
+        #skills .section-title h2 {
+            font-size: 32px;
+        }
+
+        #skills .skills-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
 
 <!-- CALL TO ACTION -->
 <div class="cta">
