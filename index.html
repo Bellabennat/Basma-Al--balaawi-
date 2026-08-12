@@ -6,22 +6,24 @@
 
 <title>Veena Rathore | Zonal Head</title>
 
-<meta name="description" content="Veena Rathore — Zonal Head, business leader and operations professional with experience across Zomato, MakeMyTrip and Paytm.">
+<meta name="description" content="Veena Rathore — Zonal Head and business leader with professional experience across Zomato, MakeMyTrip and Paytm.">
 
 <style>
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap');
 
 :root{
     --plum:#32152d;
-    --plum-dark:#21101e;
-    --wine:#5a263f;
-    --champagne:#d6b477;
-    --champagne-light:#ead7ad;
-    --ivory:#f8f4ed;
+    --plum-dark:#1d0c1a;
+    --wine:#632c47;
+    --champagne:#d5b276;
+    --champagne-light:#edd9b0;
+    --ivory:#faf6ef;
+    --cream:#f0e7db;
     --white:#ffffff;
-    --ink:#27232a;
-    --muted:#746d75;
-    --line:#ded7ce;
+    --text:#29242a;
+    --muted:#756d74;
+    --line:#ddd3c8;
 }
 
 *{
@@ -37,7 +39,7 @@ html{
 body{
     font-family:'DM Sans',sans-serif;
     background:var(--ivory);
-    color:var(--ink);
+    color:var(--text);
     line-height:1.7;
 }
 
@@ -48,32 +50,32 @@ a{
 
 .container{
     width:88%;
-    max-width:1240px;
+    max-width:1280px;
     margin:auto;
 }
 
-/* NAV */
+/* ================= NAVBAR ================= */
 
 .navbar{
     position:absolute;
     top:0;
     left:0;
     width:100%;
-    z-index:20;
+    z-index:50;
 }
 
 .nav{
-    height:88px;
+    height:95px;
     display:flex;
-    justify-content:space-between;
     align-items:center;
+    justify-content:space-between;
 }
 
 .logo{
     color:white;
-    font-size:19px;
+    font-size:20px;
     font-weight:700;
-    letter-spacing:4px;
+    letter-spacing:5px;
 }
 
 .logo span{
@@ -82,15 +84,16 @@ a{
 
 .nav-links{
     display:flex;
-    gap:34px;
+    gap:36px;
     list-style:none;
 }
 
 .nav-links a{
-    color:#eee4e7;
-    font-size:12px;
-    letter-spacing:1px;
+    color:#eee5e7;
+    font-size:11px;
+    font-weight:600;
     text-transform:uppercase;
+    letter-spacing:1.5px;
     transition:.3s;
 }
 
@@ -98,45 +101,45 @@ a{
     color:var(--champagne-light);
 }
 
-/* HERO */
+/* ================= HERO ================= */
 
 .hero{
     min-height:100vh;
-    background:
-        radial-gradient(circle at 82% 30%, rgba(214,180,119,.14), transparent 24%),
-        linear-gradient(120deg,var(--plum-dark),var(--plum) 55%,#421b31);
-    color:white;
-    position:relative;
-    overflow:hidden;
     display:flex;
     align-items:center;
+    position:relative;
+    overflow:hidden;
+    background:
+        radial-gradient(circle at 80% 25%,rgba(213,178,118,.17),transparent 25%),
+        linear-gradient(125deg,#180917,#32152d 55%,#491c34);
+    color:white;
 }
 
 .hero::before{
     content:"";
     position:absolute;
-    width:600px;
-    height:600px;
-    border:1px solid rgba(214,180,119,.16);
+    width:650px;
+    height:650px;
+    border:1px solid rgba(213,178,118,.18);
     border-radius:50%;
-    right:-240px;
-    bottom:-280px;
+    right:-270px;
+    bottom:-300px;
 }
 
 .hero::after{
     content:"";
     position:absolute;
-    width:320px;
-    height:320px;
-    border:1px solid rgba(214,180,119,.12);
+    width:380px;
+    height:380px;
+    border:1px solid rgba(213,178,118,.10);
     border-radius:50%;
-    right:80px;
-    top:120px;
+    right:90px;
+    top:140px;
 }
 
 .hero-grid{
     display:grid;
-    grid-template-columns:1.25fr .75fr;
+    grid-template-columns:1.2fr .8fr;
     gap:90px;
     align-items:center;
     position:relative;
@@ -145,19 +148,19 @@ a{
 
 .hero-kicker{
     color:var(--champagne-light);
-    text-transform:uppercase;
-    letter-spacing:4px;
-    font-size:11px;
+    font-size:12px;
     font-weight:700;
-    margin-bottom:30px;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    margin-bottom:28px;
 }
 
 .hero h1{
     font-family:'Libre Baskerville',serif;
-    font-size:clamp(54px,8vw,104px);
-    line-height:1.02;
+    font-size:clamp(58px,8vw,108px);
     font-weight:400;
-    letter-spacing:-4px;
+    line-height:1;
+    letter-spacing:-5px;
 }
 
 .hero h1 span{
@@ -166,17 +169,16 @@ a{
 }
 
 .hero-role{
-    margin-top:28px;
-    padding-left:20px;
+    margin-top:32px;
     border-left:2px solid var(--champagne);
-    color:#f0e8e9;
-    font-size:19px;
+    padding-left:20px;
+    font-size:20px;
     font-weight:500;
 }
 
 .hero-copy{
+    max-width:690px;
     margin-top:28px;
-    max-width:680px;
     color:#cdbfc5;
     font-size:16px;
     line-height:1.9;
@@ -190,11 +192,11 @@ a{
 
 .btn{
     display:inline-block;
-    padding:14px 24px;
-    font-size:12px;
+    padding:15px 26px;
+    font-size:11px;
     font-weight:700;
-    letter-spacing:1px;
     text-transform:uppercase;
+    letter-spacing:1.5px;
     transition:.3s;
 }
 
@@ -205,11 +207,12 @@ a{
 
 .btn-primary:hover{
     background:var(--champagne-light);
+    transform:translateY(-2px);
 }
 
 .btn-secondary{
-    border:1px solid rgba(255,255,255,.35);
     color:white;
+    border:1px solid rgba(255,255,255,.35);
 }
 
 .btn-secondary:hover{
@@ -217,12 +220,12 @@ a{
     color:var(--champagne-light);
 }
 
-/* HERO SIDE */
+/* HERO CARD */
 
-.hero-side{
-    min-height:430px;
-    border:1px solid rgba(214,180,119,.25);
-    padding:40px;
+.hero-card{
+    min-height:440px;
+    border:1px solid rgba(213,178,118,.28);
+    padding:45px;
     display:flex;
     flex-direction:column;
     justify-content:flex-end;
@@ -231,41 +234,42 @@ a{
 
 .monogram{
     position:absolute;
-    top:30px;
-    right:35px;
+    top:25px;
+    right:30px;
     font-family:'Libre Baskerville',serif;
-    font-size:105px;
-    color:rgba(214,180,119,.12);
+    font-size:120px;
+    color:rgba(213,178,118,.11);
 }
 
-.side-label{
+.card-label{
     color:var(--champagne);
     font-size:10px;
+    font-weight:700;
     letter-spacing:3px;
     text-transform:uppercase;
-    margin-bottom:10px;
 }
 
-.hero-side h3{
+.hero-card h3{
+    margin-top:12px;
     font-family:'Libre Baskerville',serif;
-    font-size:31px;
+    font-size:32px;
+    line-height:1.3;
     font-weight:400;
-    margin-bottom:18px;
 }
 
-.hero-side p{
+.card-line{
+    width:60px;
+    height:2px;
+    background:var(--champagne);
+    margin:26px 0;
+}
+
+.hero-card p{
     color:#cdbfc5;
     font-size:14px;
 }
 
-.side-line{
-    width:55px;
-    height:1px;
-    background:var(--champagne);
-    margin:25px 0;
-}
-
-/* STAT BAR */
+/* ================= STATS ================= */
 
 .stats{
     background:var(--champagne);
@@ -278,21 +282,21 @@ a{
 }
 
 .stat{
-    padding:27px;
+    padding:28px;
     text-align:center;
-    border-right:1px solid rgba(50,21,45,.18);
+    border-right:1px solid rgba(30,12,26,.18);
 }
 
 .stat:last-child{
-    border:none;
+    border-right:none;
 }
 
 .stat small{
     display:block;
     font-size:9px;
+    font-weight:800;
     text-transform:uppercase;
     letter-spacing:2px;
-    font-weight:700;
     margin-bottom:5px;
 }
 
@@ -300,37 +304,58 @@ a{
     font-size:15px;
 }
 
-/* GENERAL SECTIONS */
+/* ================= SECTIONS ================= */
 
 section{
-    padding:115px 0;
+    padding:125px 0;
 }
 
 .section-kicker{
     color:var(--wine);
-    font-size:10px;
+    display:flex;
+    align-items:center;
+    gap:14px;
+    font-size:15px;
     font-weight:800;
     text-transform:uppercase;
-    letter-spacing:3px;
-    margin-bottom:16px;
+    letter-spacing:4px;
+    margin-bottom:25px;
+}
+
+.section-kicker::before{
+    content:"";
+    width:48px;
+    height:2px;
+    background:var(--champagne);
+}
+
+.section-kicker::after{
+    content:"";
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    background:var(--champagne);
+    margin-left:-8px;
 }
 
 .section-title{
     font-family:'Libre Baskerville',serif;
-    font-size:clamp(36px,5vw,58px);
-    line-height:1.2;
+    font-size:clamp(43px,5.5vw,70px);
     font-weight:400;
+    line-height:1.12;
+    letter-spacing:-2px;
     color:var(--plum);
 }
 
 .section-intro{
     color:var(--muted);
     max-width:680px;
-    margin-top:20px;
+    margin-top:22px;
     font-size:16px;
+    line-height:1.9;
 }
 
-/* ABOUT */
+/* ================= ABOUT ================= */
 
 .about{
     background:var(--ivory);
@@ -338,38 +363,46 @@ section{
 
 .about-grid{
     display:grid;
-    grid-template-columns:.7fr 1.3fr;
+    grid-template-columns:.65fr 1.35fr;
     gap:100px;
+    align-items:start;
 }
 
 .about-mark{
     font-family:'Libre Baskerville',serif;
-    font-size:150px;
-    color:#e7ded4;
-    line-height:.8;
+    font-size:clamp(160px,18vw,245px);
+    line-height:.7;
+    letter-spacing:-14px;
+    color:#e3d9ce;
+    margin-top:25px;
+}
+
+.about-content{
+    padding-top:8px;
 }
 
 .about-content p{
     color:var(--muted);
-    margin-bottom:20px;
     font-size:16px;
+    margin-top:20px;
+    line-height:1.9;
 }
 
 .about-content strong{
     color:var(--plum);
 }
 
-/* CAREER */
+/* ================= CAREER ================= */
 
 .career{
     background:white;
 }
 
-.career-header{
+.career-top{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:60px;
-    margin-bottom:60px;
+    gap:80px;
+    margin-bottom:65px;
 }
 
 .career-list{
@@ -378,28 +411,29 @@ section{
 
 .career-item{
     display:grid;
-    grid-template-columns:90px 1fr 180px;
+    grid-template-columns:85px 1fr 190px;
     gap:30px;
-    padding:38px 0;
+    padding:42px 0;
     border-bottom:1px solid var(--line);
     transition:.3s;
 }
 
 .career-item:hover{
-    padding-left:15px;
     background:#fffdf9;
+    padding-left:18px;
 }
 
-.career-num{
+.career-number{
     color:var(--champagne);
-    font-size:12px;
+    font-size:13px;
     font-weight:800;
+    letter-spacing:2px;
 }
 
 .career-company{
-    color:var(--plum);
     font-family:'Libre Baskerville',serif;
-    font-size:25px;
+    color:var(--plum);
+    font-size:28px;
 }
 
 .career-role{
@@ -412,19 +446,19 @@ section{
 .career-description{
     color:var(--muted);
     font-size:13px;
+    max-width:680px;
     margin-top:12px;
-    max-width:650px;
 }
 
 .career-type{
     text-align:right;
-    color:#958d91;
-    font-size:11px;
+    color:#918990;
+    font-size:10px;
     text-transform:uppercase;
-    letter-spacing:1px;
+    letter-spacing:1.5px;
 }
 
-/* EXPERTISE */
+/* ================= EXPERTISE ================= */
 
 .expertise{
     background:var(--plum-dark);
@@ -444,17 +478,17 @@ section{
 }
 
 .expertise-grid{
-    margin-top:60px;
     display:grid;
     grid-template-columns:repeat(2,1fr);
+    margin-top:65px;
     gap:1px;
     background:rgba(255,255,255,.12);
 }
 
 .expertise-item{
     background:var(--plum-dark);
-    padding:38px;
-    min-height:220px;
+    padding:42px;
+    min-height:230px;
     transition:.3s;
 }
 
@@ -465,40 +499,40 @@ section{
 .expertise-number{
     color:var(--champagne);
     font-size:11px;
-    letter-spacing:2px;
     font-weight:800;
+    letter-spacing:2px;
     margin-bottom:40px;
 }
 
 .expertise-item h3{
     font-family:'Libre Baskerville',serif;
-    font-size:23px;
+    font-size:24px;
     font-weight:400;
-    margin-bottom:10px;
+    margin-bottom:12px;
 }
 
 .expertise-item p{
-    color:#c6b8bf;
+    color:#c5b7be;
     font-size:14px;
 }
 
-/* LEADERSHIP */
+/* ================= LEADERSHIP ================= */
 
 .leadership{
-    background:#eee7de;
+    background:var(--cream);
 }
 
 .leadership-grid{
     display:grid;
     grid-template-columns:repeat(4,1fr);
-    margin-top:55px;
-    border-top:1px solid #d1c7bc;
-    border-bottom:1px solid #d1c7bc;
+    margin-top:65px;
+    border-top:1px solid #d1c5b9;
+    border-bottom:1px solid #d1c5b9;
 }
 
 .leadership-item{
-    padding:38px 25px;
-    border-right:1px solid #d1c7bc;
+    padding:42px 27px;
+    border-right:1px solid #d1c5b9;
 }
 
 .leadership-item:last-child{
@@ -506,10 +540,10 @@ section{
 }
 
 .leadership-item h3{
-    color:var(--plum);
     font-family:'Libre Baskerville',serif;
-    font-size:19px;
-    margin-bottom:12px;
+    color:var(--plum);
+    font-size:20px;
+    margin-bottom:14px;
 }
 
 .leadership-item p{
@@ -517,7 +551,7 @@ section{
     font-size:13px;
 }
 
-/* CONTACT */
+/* ================= CONTACT ================= */
 
 .contact{
     background:white;
@@ -526,7 +560,7 @@ section{
 .contact-grid{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:90px;
+    gap:100px;
     align-items:center;
 }
 
@@ -542,10 +576,10 @@ section{
 .contact-item small{
     display:block;
     color:var(--wine);
-    text-transform:uppercase;
-    letter-spacing:2px;
     font-size:9px;
     font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:2px;
     margin-bottom:5px;
 }
 
@@ -558,7 +592,7 @@ section{
 .contact-card{
     background:var(--plum);
     color:white;
-    padding:60px;
+    padding:65px;
     position:relative;
     overflow:hidden;
 }
@@ -566,33 +600,34 @@ section{
 .contact-card::after{
     content:"";
     position:absolute;
-    width:250px;
-    height:250px;
-    border:1px solid rgba(214,180,119,.2);
+    width:280px;
+    height:280px;
+    border:1px solid rgba(213,178,118,.2);
     border-radius:50%;
-    right:-120px;
-    bottom:-120px;
+    right:-140px;
+    bottom:-140px;
 }
 
 .contact-card h3{
-    font-family:'Libre Baskerville',serif;
-    font-size:35px;
-    font-weight:400;
     position:relative;
     z-index:2;
+    font-family:'Libre Baskerville',serif;
+    font-size:38px;
+    line-height:1.3;
+    font-weight:400;
 }
 
 .contact-card p{
-    color:#cdbfc5;
-    margin:20px 0 30px;
     position:relative;
     z-index:2;
+    color:#cdbfc5;
+    margin:22px 0 32px;
 }
 
-/* FOOTER */
+/* ================= FOOTER ================= */
 
 footer{
-    background:#170b15;
+    background:#160a14;
     color:#9f9198;
     padding:30px 0;
     font-size:12px;
@@ -607,7 +642,7 @@ footer{
     color:white;
 }
 
-/* RESPONSIVE */
+/* ================= RESPONSIVE ================= */
 
 @media(max-width:900px){
 
@@ -616,19 +651,19 @@ footer{
     }
 
     .hero{
-        padding:140px 0 90px;
+        padding:145px 0 90px;
     }
 
     .hero-grid,
     .about-grid,
-    .career-header,
+    .career-top,
     .contact-grid{
         grid-template-columns:1fr;
-        gap:50px;
+        gap:55px;
     }
 
-    .hero-side{
-        min-height:300px;
+    .hero-card{
+        min-height:320px;
     }
 
     .career-item{
@@ -646,6 +681,7 @@ footer{
     .leadership-grid{
         grid-template-columns:1fr 1fr;
     }
+
 }
 
 @media(max-width:600px){
@@ -655,11 +691,17 @@ footer{
     }
 
     section{
-        padding:80px 0;
+        padding:85px 0;
     }
 
     .hero h1{
-        font-size:55px;
+        font-size:56px;
+        letter-spacing:-3px;
+    }
+
+    .hero-kicker{
+        font-size:10px;
+        letter-spacing:2.5px;
     }
 
     .hero-buttons{
@@ -673,15 +715,24 @@ footer{
 
     .stat{
         border-right:none;
-        border-bottom:1px solid rgba(50,21,45,.18);
+        border-bottom:1px solid rgba(30,12,26,.18);
     }
 
     .stat:last-child{
         border-bottom:none;
     }
 
+    .section-kicker{
+        font-size:12px;
+        letter-spacing:3px;
+    }
+
+    .section-title{
+        font-size:42px;
+    }
+
     .about-mark{
-        font-size:90px;
+        font-size:125px;
     }
 
     .leadership-grid{
@@ -690,7 +741,7 @@ footer{
 
     .leadership-item{
         border-right:none;
-        border-bottom:1px solid #d1c7bc;
+        border-bottom:1px solid #d1c5b9;
     }
 
     .leadership-item:last-child{
@@ -698,13 +749,23 @@ footer{
     }
 
     .contact-card{
-        padding:35px;
+        padding:38px;
+    }
+
+    .contact-card h3{
+        font-size:30px;
     }
 
     .footer-inner{
         display:block;
     }
+
+    .footer-inner div + div{
+        margin-top:8px;
+    }
+
 }
+
 </style>
 </head>
 
@@ -713,21 +774,23 @@ footer{
 <!-- NAVIGATION -->
 
 <nav class="navbar">
-    <div class="container nav">
 
-        <a href="#home" class="logo">
-            VEENA<span>.</span>
-        </a>
+<div class="container nav">
 
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#career">Career</a></li>
-            <li><a href="#expertise">Expertise</a></li>
-            <li><a href="#leadership">Leadership</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+<a href="#home" class="logo">
+VEENA<span>.</span>
+</a>
 
-    </div>
+<ul class="nav-links">
+<li><a href="#about">About</a></li>
+<li><a href="#career">Career</a></li>
+<li><a href="#expertise">Expertise</a></li>
+<li><a href="#leadership">Leadership</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</div>
+
 </nav>
 
 
@@ -735,73 +798,74 @@ footer{
 
 <section class="hero" id="home">
 
-    <div class="container hero-grid">
+<div class="container hero-grid">
 
-        <div>
+<div>
 
-            <div class="hero-kicker">
-                Zonal Head · Business Leadership · Operations
-            </div>
+<div class="hero-kicker">
+Zonal Head · Business Leadership · Operations
+</div>
 
-            <h1>
-                Veena
-                <span>Rathore</span>
-            </h1>
+<h1>
+Veena
+<span>Rathore</span>
+</h1>
 
-            <div class="hero-role">
-                Zonal Head at Zomato
-            </div>
+<div class="hero-role">
+Zonal Head at Zomato
+</div>
 
-            <p class="hero-copy">
-                Business and operations professional with experience across
-                Zomato, MakeMyTrip and Paytm. Focused on leadership, growth,
-                client relationships, operational excellence and building
-                high-performing teams.
-            </p>
+<p class="hero-copy">
+Business and operations professional with experience across
+Zomato, MakeMyTrip and Paytm. Focused on leadership, growth,
+client relationships, operational excellence and building
+high-performing teams.
+</p>
 
-            <div class="hero-buttons">
-                <a href="#career" class="btn btn-primary">
-                    View Career
-                </a>
+<div class="hero-buttons">
 
-                <a href="#contact" class="btn btn-secondary">
-                    Contact
-                </a>
-            </div>
+<a href="#career" class="btn btn-primary">
+View Career
+</a>
 
-        </div>
+<a href="#contact" class="btn btn-secondary">
+Contact
+</a>
+
+</div>
+
+</div>
 
 
-        <div class="hero-side">
+<div class="hero-card">
 
-            <div class="monogram">
-                VR
-            </div>
+<div class="monogram">
+VR
+</div>
 
-            <div>
+<div>
 
-                <div class="side-label">
-                    Current Position
-                </div>
+<div class="card-label">
+Current Position
+</div>
 
-                <h3>
-                    Leading business<br>
-                    through people & performance.
-                </h3>
+<h3>
+Leading business through
+people & performance.
+</h3>
 
-                <div class="side-line"></div>
+<div class="card-line"></div>
 
-                <p>
-                    Currently serving as Zonal Head at Zomato, following
-                    experience as a Key Account Manager within the
-                    organization.
-                </p>
+<p>
+Currently serving as Zonal Head at Zomato, following
+experience as a Key Account Manager within the organization.
+</p>
 
-            </div>
+</div>
 
-        </div>
+</div>
 
-    </div>
+</div>
 
 </section>
 
@@ -810,24 +874,24 @@ footer{
 
 <div class="stats">
 
-    <div class="container stats-grid">
+<div class="container stats-grid">
 
-        <div class="stat">
-            <small>Current Role</small>
-            <strong>Zonal Head · Zomato</strong>
-        </div>
+<div class="stat">
+<small>Current Role</small>
+<strong>Zonal Head · Zomato</strong>
+</div>
 
-        <div class="stat">
-            <small>Previous Role</small>
-            <strong>KAM · Zomato</strong>
-        </div>
+<div class="stat">
+<small>Previous Role</small>
+<strong>KAM · Zomato</strong>
+</div>
 
-        <div class="stat">
-            <small>Career Exposure</small>
-            <strong>Zomato · MakeMyTrip · Paytm</strong>
-        </div>
+<div class="stat">
+<small>Career Exposure</small>
+<strong>Zomato · MakeMyTrip · Paytm</strong>
+</div>
 
-    </div>
+</div>
 
 </div>
 
@@ -836,55 +900,56 @@ footer{
 
 <section class="about" id="about">
 
-    <div class="container about-grid">
+<div class="container about-grid">
 
-        <div>
+<div>
 
-            <div class="section-kicker">
-                01 · About
-            </div>
+<div class="section-kicker">
+01 · About
+</div>
 
-            <div class="about-mark">
-                VR
-            </div>
+<div class="about-mark">
+VR
+</div>
 
-        </div>
+</div>
 
 
-        <div class="about-content">
+<div class="about-content">
 
-            <h2 class="section-title">
-                A career shaped by growth, leadership and execution.
-            </h2>
+<h2 class="section-title">
+A career shaped by growth,
+leadership and execution.
+</h2>
 
-            <p>
-                <strong>Veena Rathore</strong> is an experienced business
-                professional currently working as a <strong>Zonal Head at
-                Zomato</strong>.
-            </p>
+<p>
+<strong>Veena Rathore</strong> is an experienced business
+professional currently working as a
+<strong>Zonal Head at Zomato</strong>.
+</p>
 
-            <p>
-                Her journey includes experience as a
-                <strong>Key Account Manager at Zomato</strong>, along with
-                professional experience at <strong>MakeMyTrip</strong> and
-                <strong>Paytm</strong>.
-            </p>
+<p>
+Her journey includes experience as a
+<strong>Key Account Manager at Zomato</strong>, along with
+professional experience at <strong>MakeMyTrip</strong> and
+<strong>Paytm</strong>.
+</p>
 
-            <p>
-                Her professional strengths include business operations,
-                team leadership, account management, stakeholder management,
-                sales, growth and performance-driven execution.
-            </p>
+<p>
+Her professional strengths include business operations,
+team leadership, account management, stakeholder management,
+sales, growth and performance-driven execution.
+</p>
 
-            <p>
-                Her experience in fast-moving digital businesses has shaped
-                a practical and commercially focused approach to leadership,
-                problem solving and business growth.
-            </p>
+<p>
+Her experience in fast-moving digital businesses has shaped
+a practical and commercially focused approach to leadership,
+problem solving and business growth.
+</p>
 
-        </div>
+</div>
 
-    </div>
+</div>
 
 </section>
 
@@ -893,156 +958,159 @@ footer{
 
 <section class="career" id="career">
 
-    <div class="container">
+<div class="container">
 
-        <div class="career-header">
+<div class="career-top">
 
-            <div>
+<div>
 
-                <div class="section-kicker">
-                    02 · Career
-                </div>
+<div class="section-kicker">
+02 · Career
+</div>
 
-                <h2 class="section-title">
-                    Professional Journey
-                </h2>
+<h2 class="section-title">
+Professional
+Journey
+</h2>
 
-            </div>
+</div>
 
-            <p class="section-intro">
-                Experience across leading technology, travel and digital
-                businesses, progressing through roles involving clients,
-                operations, growth and leadership.
-            </p>
+<p class="section-intro">
+Experience across leading technology, travel and digital
+businesses, progressing through roles involving clients,
+operations, growth and leadership.
+</p>
 
-        </div>
-
-
-        <div class="career-list">
-
-            <div class="career-item">
-
-                <div class="career-num">
-                    01
-                </div>
-
-                <div>
-
-                    <div class="career-company">
-                        Zomato
-                    </div>
-
-                    <div class="career-role">
-                        Zonal Head · Current
-                    </div>
-
-                    <p class="career-description">
-                        Leading business and operational activities at the
-                        zonal level with focus on performance, growth,
-                        people and execution.
-                    </p>
-
-                </div>
-
-                <div class="career-type">
-                    Leadership
-                </div>
-
-            </div>
+</div>
 
 
-            <div class="career-item">
-
-                <div class="career-num">
-                    02
-                </div>
-
-                <div>
-
-                    <div class="career-company">
-                        Zomato
-                    </div>
-
-                    <div class="career-role">
-                        Key Account Manager · Previous
-                    </div>
-
-                    <p class="career-description">
-                        Experience managing business relationships, accounts,
-                        stakeholder coordination and commercial performance.
-                    </p>
-
-                </div>
-
-                <div class="career-type">
-                    Account Management
-                </div>
-
-            </div>
+<div class="career-list">
 
 
-            <div class="career-item">
+<div class="career-item">
 
-                <div class="career-num">
-                    03
-                </div>
+<div class="career-number">
+01
+</div>
 
-                <div>
+<div>
 
-                    <div class="career-company">
-                        MakeMyTrip
-                    </div>
+<div class="career-company">
+Zomato
+</div>
 
-                    <div class="career-role">
-                        Professional Experience
-                    </div>
+<div class="career-role">
+Zonal Head · Current
+</div>
 
-                    <p class="career-description">
-                        Experience within a leading travel and technology
-                        organization.
-                    </p>
+<p class="career-description">
+Leading business and operational activities at the
+zonal level with focus on performance, growth,
+people and execution.
+</p>
 
-                </div>
+</div>
 
-                <div class="career-type">
-                    Travel · Technology
-                </div>
+<div class="career-type">
+Leadership
+</div>
 
-            </div>
+</div>
 
 
-            <div class="career-item">
+<div class="career-item">
 
-                <div class="career-num">
-                    04
-                </div>
+<div class="career-number">
+02
+</div>
 
-                <div>
+<div>
 
-                    <div class="career-company">
-                        Paytm
-                    </div>
+<div class="career-company">
+Zomato
+</div>
 
-                    <div class="career-role">
-                        Professional Experience
-                    </div>
+<div class="career-role">
+Key Account Manager · Previous
+</div>
 
-                    <p class="career-description">
-                        Experience within a leading digital business and
-                        technology environment.
-                    </p>
+<p class="career-description">
+Experience managing business relationships, accounts,
+stakeholder coordination and commercial performance.
+</p>
 
-                </div>
+</div>
 
-                <div class="career-type">
-                    Digital Business
-                </div>
+<div class="career-type">
+Account Management
+</div>
 
-            </div>
+</div>
 
-        </div>
 
-    </div>
+<div class="career-item">
+
+<div class="career-number">
+03
+</div>
+
+<div>
+
+<div class="career-company">
+MakeMyTrip
+</div>
+
+<div class="career-role">
+Professional Experience
+</div>
+
+<p class="career-description">
+Experience within a leading travel and technology
+organization.
+</p>
+
+</div>
+
+<div class="career-type">
+Travel · Technology
+</div>
+
+</div>
+
+
+<div class="career-item">
+
+<div class="career-number">
+04
+</div>
+
+<div>
+
+<div class="career-company">
+Paytm
+</div>
+
+<div class="career-role">
+Professional Experience
+</div>
+
+<p class="career-description">
+Experience within a leading digital business and
+technology environment.
+</p>
+
+</div>
+
+<div class="career-type">
+Digital Business
+</div>
+
+</div>
+
+
+</div>
+
+</div>
 
 </section>
 
@@ -1051,133 +1119,136 @@ footer{
 
 <section class="expertise" id="expertise">
 
-    <div class="container">
+<div class="container">
 
-        <div class="section-kicker">
-            03 · Expertise
-        </div>
+<div class="section-kicker">
+03 · Expertise
+</div>
 
-        <h2 class="section-title">
-            What drives professional performance.
-        </h2>
+<h2 class="section-title">
+What drives professional
+performance.
+</h2>
 
-        <p class="section-intro">
-            Core areas of capability developed through experience in
-            business, operations, leadership and account management.
-        </p>
-
-
-        <div class="expertise-grid">
-
-            <div class="expertise-item">
-
-                <div class="expertise-number">
-                    01
-                </div>
-
-                <h3>
-                    Business Operations
-                </h3>
-
-                <p>
-                    Structured execution, operational discipline and
-                    performance management.
-                </p>
-
-            </div>
+<p class="section-intro">
+Core areas of capability developed through experience in
+business, operations, leadership and account management.
+</p>
 
 
-            <div class="expertise-item">
-
-                <div class="expertise-number">
-                    02
-                </div>
-
-                <h3>
-                    Team Leadership
-                </h3>
-
-                <p>
-                    Leading people, creating accountability and supporting
-                    high-performing teams.
-                </p>
-
-            </div>
+<div class="expertise-grid">
 
 
-            <div class="expertise-item">
+<div class="expertise-item">
 
-                <div class="expertise-number">
-                    03
-                </div>
+<div class="expertise-number">
+01
+</div>
 
-                <h3>
-                    Business Growth
-                </h3>
+<h3>
+Business Operations
+</h3>
 
-                <p>
-                    Identifying opportunities and supporting commercial
-                    growth.
-                </p>
+<p>
+Structured execution, operational discipline and
+performance management.
+</p>
 
-            </div>
-
-
-            <div class="expertise-item">
-
-                <div class="expertise-number">
-                    04
-                </div>
-
-                <h3>
-                    Key Account Management
-                </h3>
-
-                <p>
-                    Building relationships and managing important business
-                    accounts.
-                </p>
-
-            </div>
+</div>
 
 
-            <div class="expertise-item">
+<div class="expertise-item">
 
-                <div class="expertise-number">
-                    05
-                </div>
+<div class="expertise-number">
+02
+</div>
 
-                <h3>
-                    Stakeholder Management
-                </h3>
+<h3>
+Team Leadership
+</h3>
 
-                <p>
-                    Coordinating effectively with clients, partners and
-                    internal teams.
-                </p>
+<p>
+Leading people, creating accountability and supporting
+high-performing teams.
+</p>
 
-            </div>
+</div>
 
 
-            <div class="expertise-item">
+<div class="expertise-item">
 
-                <div class="expertise-number">
-                    06
-                </div>
+<div class="expertise-number">
+03
+</div>
 
-                <h3>
-                    Performance Management
-                </h3>
+<h3>
+Business Growth
+</h3>
 
-                <p>
-                    Aligning teams and execution with business objectives.
-                </p>
+<p>
+Identifying opportunities and supporting commercial
+growth.
+</p>
 
-            </div>
+</div>
 
-        </div>
 
-    </div>
+<div class="expertise-item">
+
+<div class="expertise-number">
+04
+</div>
+
+<h3>
+Key Account Management
+</h3>
+
+<p>
+Building relationships and managing important business
+accounts.
+</p>
+
+</div>
+
+
+<div class="expertise-item">
+
+<div class="expertise-number">
+05
+</div>
+
+<h3>
+Stakeholder Management
+</h3>
+
+<p>
+Coordinating effectively with clients, partners and
+internal teams.
+</p>
+
+</div>
+
+
+<div class="expertise-item">
+
+<div class="expertise-number">
+06
+</div>
+
+<h3>
+Performance Management
+</h3>
+
+<p>
+Aligning teams and execution with business objectives.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
 
 </section>
 
@@ -1186,75 +1257,78 @@ footer{
 
 <section class="leadership" id="leadership">
 
-    <div class="container">
+<div class="container">
 
-        <div class="section-kicker">
-            04 · Leadership
-        </div>
+<div class="section-kicker">
+04 · Leadership
+</div>
 
-        <h2 class="section-title">
-            Leadership with a focus on people and performance.
-        </h2>
-
-
-        <div class="leadership-grid">
-
-            <div class="leadership-item">
-
-                <h3>
-                    People
-                </h3>
-
-                <p>
-                    Supporting teams through communication, clarity and
-                    accountability.
-                </p>
-
-            </div>
+<h2 class="section-title">
+Leadership with a focus on
+people and performance.
+</h2>
 
 
-            <div class="leadership-item">
-
-                <h3>
-                    Performance
-                </h3>
-
-                <p>
-                    Maintaining focus on measurable business outcomes.
-                </p>
-
-            </div>
+<div class="leadership-grid">
 
 
-            <div class="leadership-item">
+<div class="leadership-item">
 
-                <h3>
-                    Growth
-                </h3>
+<h3>
+People
+</h3>
 
-                <p>
-                    Identifying opportunities and supporting sustainable
-                    business growth.
-                </p>
+<p>
+Supporting teams through communication, clarity and
+accountability.
+</p>
 
-            </div>
+</div>
 
 
-            <div class="leadership-item">
+<div class="leadership-item">
 
-                <h3>
-                    Execution
-                </h3>
+<h3>
+Performance
+</h3>
 
-                <p>
-                    Turning business priorities into practical action.
-                </p>
+<p>
+Maintaining focus on measurable business outcomes.
+</p>
 
-            </div>
+</div>
 
-        </div>
 
-    </div>
+<div class="leadership-item">
+
+<h3>
+Growth
+</h3>
+
+<p>
+Identifying opportunities and supporting sustainable
+business growth.
+</p>
+
+</div>
+
+
+<div class="leadership-item">
+
+<h3>
+Execution
+</h3>
+
+<p>
+Turning business priorities into practical action.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
 
 </section>
 
@@ -1263,75 +1337,76 @@ footer{
 
 <section class="contact" id="contact">
 
-    <div class="container contact-grid">
+<div class="container contact-grid">
 
-        <div>
+<div>
 
-            <div class="section-kicker">
-                05 · Contact
-            </div>
+<div class="section-kicker">
+05 · Contact
+</div>
 
-            <h2 class="section-title">
-                Let's connect.
-            </h2>
+<h2 class="section-title">
+Let's connect.
+</h2>
 
-            <p class="section-intro">
-                For professional opportunities, collaborations or business
-                conversations.
-            </p>
-
-
-            <div class="contact-box">
-
-                <div class="contact-item">
-
-                    <small>
-                        Email
-                    </small>
-
-                    <a href="mailto:Basmaalbalaawi12@gmail.com">
-                        Basmaalbalaawi12@gmail.com
-                    </a>
-
-                </div>
+<p class="section-intro">
+For professional opportunities, collaborations or
+business conversations.
+</p>
 
 
-                <div class="contact-item">
+<div class="contact-box">
 
-                    <small>
-                        Phone
-                    </small>
+<div class="contact-item">
 
-                    <a href="tel:8349153951">
-                        8349153951
-                    </a>
+<small>
+Email
+</small>
 
-                </div>
+<a href="mailto:Veenarathore@gmail.com">
+Veenarathore@gmail.com
+</a>
 
-            </div>
-
-        </div>
+</div>
 
 
-        <div class="contact-card">
+<div class="contact-item">
 
-            <h3>
-                Good leadership begins with a conversation.
-            </h3>
+<small>
+Phone
+</small>
 
-            <p>
-                Connect for professional opportunities, collaborations and
-                business discussions.
-            </p>
+<a href="tel:8349153951">
+8349153951
+</a>
 
-            <a href="mailto:Basmaalbalaawi12@gmail.com"
-               class="btn btn-primary">
-                Send Email
-            </a>
+</div>
 
-        </div>
+</div>
 
-    </div>
+</div>
+
+
+<div class="contact-card">
+
+<h3>
+Good leadership begins
+with a conversation.
+</h3>
+
+<p>
+Connect for professional opportunities, collaborations
+and business discussions.
+</p>
+
+<a href="mailto:Veenarathore@gmail.com"
+class="btn btn-primary">
+Send Email
+</a>
+
+</div>
+
+</div>
 
 </section>
 
@@ -1340,17 +1415,17 @@ footer{
 
 <footer>
 
-    <div class="container footer-inner">
+<div class="container footer-inner">
 
-        <div>
-            © 2026 <span class="footer-name">Veena Rathore</span>
-        </div>
+<div>
+© 2026 <span class="footer-name">Veena Rathore</span>
+</div>
 
-        <div>
-            Zonal Head · Business Leadership
-        </div>
+<div>
+Zonal Head · Business Leadership
+</div>
 
-    </div>
+</div>
 
 </footer>
 
